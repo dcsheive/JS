@@ -1,6 +1,19 @@
-function printRange(startP,endP,skipP) {
-    for (var i= startP; i<endP; i = i + skipP) {
-        console.log(i);
+var HOUR = 8;
+var MINUTE = 30;
+var PERIOD = "PM";
+if(PERIOD == "AM") {
+    if (MINUTE<=30){
+        console.log("It's just after "+HOUR+" in the morning")
+    }
+    else{
+        console.log("It's almost "+(HOUR+1)+" in the morning")
     }
 }
-printRange(-2,10,3);
+else {
+    if (MINUTE<=30){
+        console.log("It's just after "+HOUR+" in the evening")
+    }
+    else{
+        console.log("It's almost "+(HOUR+1)+" in the evening")
+    }
+}

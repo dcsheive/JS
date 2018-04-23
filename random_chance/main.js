@@ -1,4 +1,4 @@
-function fuckingQuarters(quart){
+function Quarters(quart){
     var chance, win;
     for (var i = quart; i >0; i--) {
         win = Math.trunc(Math.random() *51) +50;
@@ -9,4 +9,4 @@ function fuckingQuarters(quart){
     }
     return 0;
 }
-console.log(fuckingQuarters(50));
+console.log(Quarters(50));
