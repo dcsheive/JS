@@ -26,8 +26,10 @@ var users = {
 for(let x in users) {
     console.log(x);
     for( let y in users[x]){
-        console.log(users[x][y].first_name+' '+users[x][y].last_name+' - '
-            +(users[x][y].first_name.length+users[x][y].last_name.length));
+        var name = users[x][y].first_name+' '+users[x][y].last_name;
+        y++;
+        console.log(y+' - '+name+' - '+(name.length-1));
+        y--;
     }
 }
 
